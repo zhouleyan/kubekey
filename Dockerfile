@@ -22,10 +22,8 @@ FROM golang:1.14
 
 # RUN useradd -m kubekey && apt-get update && apt-get install bash curl -y; apt-get autoclean; rm -rf /var/lib/apt/lists/*
 
-# #ADD kubekey /home/kubekey/kubekey
-# #RUN chown kubekey:kubekey -R /home/kubekey/kubekey
-
-# USER kubekey:kubekey
+USER kubekey:kubekey
+RUN mkdir -p /home/kubekey/kubekey
 
 # WORKDIR /home/kubekey
 
@@ -33,5 +31,4 @@ FROM golang:1.14
 # COPY --from=builder /workspace/helm-charts/src/test/ks-installer /home/kubekey/addons/ks-installer
 # COPY --from=builder /workspace/manager /home/kubekey
 # COPY --from=builder /workspace/kk /home/kubekey
-
 

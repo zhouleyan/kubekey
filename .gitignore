@@ -16,11 +16,13 @@
 
 # Vscode files
 .vscode
+.devcontainer
 
 # This is where the result of the go build goes
 /output*/
 /_output*/
 /_output
+/sources
 
 # Emacs save files
 *~

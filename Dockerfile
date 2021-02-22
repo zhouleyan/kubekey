@@ -22,8 +22,8 @@ FROM golang:1.14
 
 # RUN useradd -m kubekey && apt-get update && apt-get install bash curl -y; apt-get autoclean; rm -rf /var/lib/apt/lists/*
 
-USER kubekey:kubekey
-RUN mkdir -p /home/kubekey/kubekey
+# USER kubekey:kubekey
+# RUN mkdir -p /home/kubekey/kubekey
 
 # WORKDIR /home/kubekey
 

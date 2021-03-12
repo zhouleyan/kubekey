@@ -4,12 +4,13 @@ metadata:
   name: lke
 spec:
   hosts:
+  - {name: master, address: 172.16.239.100, internalAddress: 172.16.239.100, user: root, password: 123456}
   - {name: node1, address: 172.16.239.101, internalAddress: 172.16.239.101, user: root, password: 123456}
   roleGroups:
     etcd:
-    - node1
+    - master
     master: 
-    - node1
+    - master
     worker:
     - node1
   controlPlaneEndpoint:

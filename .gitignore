@@ -24,6 +24,9 @@
 /_output
 /sources
 
+# Kubekey sample
+/sample
+
 # Emacs save files
 *~
 \#*\#

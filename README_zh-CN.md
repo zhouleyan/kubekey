@@ -18,8 +18,8 @@
 
 * 基于 Ansible 的安装程序具有大量软件依赖性，例如 Python。KubeKey 是使用 Go 语言开发的，可以消除在各种环境中出现的问题，从而提高安装成功率。
 * KubeKey 使用 Kubeadm 在节点上尽可能多地并行安装 K8s 集群，以降低安装复杂性并提高效率。与较早的安装程序相比，它将大大节省安装时间。
-* KubeKey 支持将群集从 all-in-one 扩展到多节点群集甚至 HA 集群。
-* KubeKey 旨在将群集当作一个对象操作，即 CaaO。
+* KubeKey 支持将集群从 all-in-one 扩展到多节点集群甚至 HA 集群。
+* KubeKey 旨在将集群当作一个对象操作，即 CaaO。
 
 ## 支持的环境
 
@@ -73,7 +73,7 @@ KubeKey 可以同时安装 Kubernetes 和 KubeSphere。根据 KubeSphere 所安�
 | `ipset`     | 可选，但推荐安装       | 可选，但推荐安装       |
 
 * 网络和 DNS 要求：
-  * 确保 `/etc/resolv.conf` 中的 DNS 地址可用。否则，可能会导致群集中出现某些 DNS 问题。
+  * 确保 `/etc/resolv.conf` 中的 DNS 地址可用。否则，可能会导致集群中出现某些 DNS 问题。
   * 如果您的网络配置使用防火墙或安全组，则必须确保基础结构组件可以通过特定端口相互通信。建议您关闭防火墙或遵循链接配置：[网络访问](docs/network-access.md)。
 
 ## 用法
@@ -135,7 +135,7 @@ KubeKey 可以同时安装 Kubernetes 和 KubeSphere。根据 KubeSphere 所安�
 
 #### 高级用法
 
-您可以使用高级安装来控制自定义参数或创建多节点群集。具体来说，通过指定配置文件来创建集群。
+您可以使用高级安装来控制自定义参数或创建多节点集群。具体来说，通过指定配置文件来创建集群。
 
 > 如果无法访问 `https://storage.googleapis.com`, 请先执行 `export KKZONE=cn`.
 
@@ -181,7 +181,7 @@ KubeSphere 有多个可插拔功能组件，功能组件的介绍可参考 [配�
 
 ### 添加节点
 
-将新节点的信息添加到群集配置文件，然后应用更改。
+将新节点的信息添加到集群配置文件，然后应用更改。
 
 ```shell script
 ./kk add nodes -f config-sample.yaml
@@ -308,6 +308,7 @@ kubectl completion bash >/etc/bash_completion.d/kubectl
     <td align="center"><a href="https://github.com/Fuchange"><img src="https://avatars1.githubusercontent.com/u/31716848?v=4?s=100" width="100px;" alt=""/><br /><sub><b>fu_changjie</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=Fuchange" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/yuswift"><img src="https://avatars1.githubusercontent.com/u/37265389?v=4?s=100" width="100px;" alt=""/><br /><sub><b>yuswift</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=yuswift" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/ruiyaoOps"><img src="https://avatars.githubusercontent.com/u/35256376?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ruiyaoOps</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=ruiyaoOps" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.luxingmin.com"><img src="https://avatars.githubusercontent.com/u/1918195?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LXM</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=lxm" title="Documentation">📖</a></td>
   </tr>
 </table>
 

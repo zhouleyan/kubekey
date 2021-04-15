@@ -95,37 +95,6 @@ KubeKey can install Kubernetes and KubeSphere together. The dependency that need
 > * Docker needs to be installed before building.
 > * If you have problem to access `https://proxy.golang.org/`, excute `build.sh -p` instead.
 
-<!--
-### YUM
-
-Add YUM source repo by the following command:
-
-```
-cat > bintray-kubesphere-rpm.repo <<EOF
-#bintraybintray-kubesphere-rpm - packages by kubesphere from Bintray
-[bintraybintray-kubesphere-rpm]
-name=bintray-kubesphere-rpm
-baseurl=https://dl.bintray.com/kubesphere/rpm
-gpgcheck=0
-repo_gpgcheck=0
-enabled=1
-EOF
-sudo mv bintray-kubesphere-rpm.repo /etc/yum.repos.d/ && sudo yum update
-```
-
-then you can install it by: `yum install kk`
-
-### Debian
-
-Add deb source repo by the following command:
-
-```
-echo "deb [trusted=yes] https://dl.bintray.com/kubesphere/deb wheezy main" | sudo tee -a /etc/apt/sources.list
-sudo apt update
-```
-
-then you can install it by: `sudo apt-get install kk`
--->
 ### Create a Cluster
 
 #### Quick Start
@@ -321,6 +290,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/yuswift"><img src="https://avatars1.githubusercontent.com/u/37265389?v=4?s=100" width="100px;" alt=""/><br /><sub><b>yuswift</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=yuswift" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/ruiyaoOps"><img src="https://avatars.githubusercontent.com/u/35256376?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ruiyaoOps</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=ruiyaoOps" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.luxingmin.com"><img src="https://avatars.githubusercontent.com/u/1918195?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LXM</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=lxm" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/sbhnet"><img src="https://avatars.githubusercontent.com/u/2368131?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sbhnet</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=sbhnet" title="Code">💻</a></td>
   </tr>
 </table>
 

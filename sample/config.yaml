@@ -19,7 +19,7 @@ spec:
     port: 6443
   kubernetes:
     version: v1.18.6
-    imageRepo: kubesphere
+    imageRepo: lke
     clusterName: cluster.local
     maxPods: 220
     proxyMode: ipvs
@@ -33,7 +33,7 @@ spec:
       "http://hub-mirror.c.163.com"
     ]
     insecureRegistries: []
-    privateRegistry: ""
+    privateRegistry: "harbor.zhouleyan.io"
   addons: []
 
 

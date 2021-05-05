@@ -25,7 +25,7 @@ There are three scenarios to use KubeKey.
 
 ### Linux Distributions
 
-* **Ubuntu**  *16.04, 18.04*
+* **Ubuntu**  *16.04, 18.04, 20.04*
 * **Debian**  *Buster, Stretch*
 * **CentOS/RHEL**  *7*
 * **SUSE Linux Enterprise Server** *15*
@@ -35,11 +35,12 @@ There are three scenarios to use KubeKey.
 
 * **v1.15**: &ensp; *v1.15.12*
 * **v1.16**: &ensp; *v1.16.13*
-* **v1.17**: &ensp; *v1.17.9* (default)
+* **v1.17**: &ensp; *v1.17.9*
 * **v1.18**: &ensp; *v1.18.6*
+* **v1.19**: &ensp; *v1.19.8*  (default)
+* **v1.20**: &ensp; *v1.20.4*
 > Looking for more supported versions [Click here](./docs/kubernetes-versions.md)
 
-> Notice: KubeSphere is currently not supported running on k8s v1.19.x
 ## Requirements and Recommendations
 
 * Minimum resource requirements (For Minimal Installation of KubeSphere only)：
@@ -122,10 +123,10 @@ Quick Start is for `all-in-one` installation which is a good start to get famili
 * Create a Kubernetes cluster with a specified version ([supported versions](#KubernetesVersions)).
 
     ```shell script
-    ./kk create cluster --with-kubernetes v1.17.9
+    ./kk create cluster --with-kubernetes v1.19.8
     ```
 
-* Create a Kubernetes cluster with KubeSphere installed (e.g. `--with-kubesphere v3.0.0`)
+* Create a Kubernetes cluster with KubeSphere installed (e.g. `--with-kubesphere v3.1.0`)
 
     ```shell script
     ./kk create cluster --with-kubesphere [version]
@@ -292,6 +293,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://www.luxingmin.com"><img src="https://avatars.githubusercontent.com/u/1918195?v=4?s=100" width="100px;" alt=""/><br /><sub><b>LXM</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=lxm" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/sbhnet"><img src="https://avatars.githubusercontent.com/u/2368131?v=4?s=100" width="100px;" alt=""/><br /><sub><b>sbhnet</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=sbhnet" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/misteruly"><img src="https://avatars.githubusercontent.com/u/31399968?v=4?s=100" width="100px;" alt=""/><br /><sub><b>misteruly</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=misteruly" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://johnniang.me"><img src="https://avatars.githubusercontent.com/u/16865714?v=4?s=100" width="100px;" alt=""/><br /><sub><b>John Niang</b></sub></a><br /><a href="https://github.com/kubesphere/kubekey/commits?author=JohnNiang" title="Documentation">📖</a></td>
   </tr>
 </table>
 
